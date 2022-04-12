@@ -11,3 +11,247 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Main_Slide_Rect {
+  height: 55em;
+  display: grid;
+}
+
+.nav_Bar {
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+  background-color: #333;
+  height: 5em;
+}
+
+.nav_Bar li {
+  float: right;
+  height: 5em;
+  width: 15em;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.nav_Bar a {
+  display: block;
+  color: white;
+  align-self: center;
+  align-content: center;
+  text-decoration: none;
+  padding: 1em;
+  padding-top: 1.8em;
+  font-size: 1.2em;
+}
+
+.nav_Bar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.footer {
+  display: grid;
+}
+
+.footer button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.footer_copyright {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.footer_contact {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.experiencepage_Title_Background_Color {
+  background-color: #04aa6d;
+  display: grid;
+}
+
+.experiencepage_Title_Content{
+  align-self: center;
+  font-size: 3em;
+}
+
+.homepage_Title {
+  align-self: center;
+  font-size: 3em;
+}
+
+.project_Title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 3em;
+}
+
+.left_Background_Title {
+  text-align: left;
+  padding-left: 5em;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.background_content {
+  grid-row-start: 2;
+  grid-row-end: 20;
+  display: grid;
+}
+
+.left_background_color {
+  background-color: dodgerblue;
+  display: grid;
+}
+
+.left_background_text {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  text-align: center;
+  padding-left: 3em;
+  padding-bottom: 5em;
+  align-self: center;
+  padding-right: 5em;
+  font-size: 1.5em;
+}
+
+.left_background_image {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  padding-right: 3em;
+}
+
+.right_background_text {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  text-align: left;
+  padding-left: 5em;
+  padding-bottom: 5em;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.right_background_image {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  padding-left: 3em;
+}
+
+.homepage_Indiv_Proj {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  align-self: center;
+  height: 45em;
+}
+
+.homepage_Indiv_Proj h1 {
+  align-self: center;
+}
+
+.homepage_Project_Container {
+  grid-row-start: 2;
+  grid-row-end: 20;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.experience_Background_Color {
+  background-color: aquamarine;
+  display: grid;
+}
+
+.left_Background_Title_Exp{
+  text-align: left;
+  padding-left: 5em;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.left_Background_Title_Exp h1 {
+  font-size: 5em;
+  margin: 0em;
+}
+
+.left_Background_Title_Exp h3 {
+  font-size: 2em;
+  margin-top: 0em;
+}
+
+.linkedIn_Text {
+  font-size: 2em;
+}
+
+.project_Title h1 {
+  margin: 0em;
+}
+
+.project_background_text {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  text-align: left;
+  padding-left: 3em;
+  padding-top: 3em;
+  font-size: 1.5em;
+}
+
+.experience_Image {
+  width: 30em;
+}
+
+#Ahsoka_pic {
+  width: 55em;
+}
+
+#Intra_pic {
+  width: 25em;
+}
+
+#Skimtac_pic {
+  width: 45em;
+}
+
+#BYU_pic {
+  width: 40em;
+}
+
+#HomePage_Proj1 {
+  background-image: url('../public/img/skimtac_prototype.PNG');
+  background-size: 55em;
+}
+
+#HomePage_Proj2 {
+  background-image: url('https://universe.byu.edu/wp-content/uploads/2021/05/egypt2-1-scaled.jpg');
+  background-size: 60em;
+  color: white;
+}
+
+#HomePage_Proj3 {
+  background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4P81F?ver=a732&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF');
+  background-size: 52em;
+  color: white;
+  margin-left: -5em;
+}
