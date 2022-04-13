@@ -39,8 +39,8 @@ function wumbo ()
 
 
 function App() {
-  //const [page_State, set_page_State] = useState('HomePage');
-  const [page_State, set_page_State] = useState('ExperiencePage');
+  const [page_State, set_page_State] = useState('HomePage');
+  //const [page_State, set_page_State] = useState('ExperiencePage');
 
   
 
@@ -71,17 +71,6 @@ function App() {
 
   if(page_State === 'HomePage')
   {
-    // return (
-    //   <div className="App">
-    //     <div>
-    //       <Header_Nav page_State={page_State} on_Page_State_Change={handle_State_Change}/>
-
-    //       <ExperiencePage_Main_Info page_State='ExperiencePage' />
-
-    //       <Footer />
-    //     </div>
-    //   </div>
-    // );
 
     return (
       <div className="App">
@@ -100,7 +89,7 @@ function App() {
   {
     return (
       <div className="App">
-        <div>
+        <div key={page_State}>
           <Header_Nav page_State={page_State} on_Page_State_Change={handle_State_Change}/>
 
           <ExperiencePage_Main_Info page_State={page_State} />
@@ -114,15 +103,15 @@ function App() {
   else if(page_State === 'ProjectsPage')
   {
     return (
-      <>
-        <div className="App">
+      <div className="App"> 
+        <div key={page_State}>
           <Header_Nav page_State={page_State} on_Page_State_Change={handle_State_Change}/>
 
           <ProjectsPage_Main_Info page_State={page_State} />
 
           <Footer />
         </div>
-      </>
+      </div>
     );
   }
 

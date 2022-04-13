@@ -22,7 +22,7 @@ function HomePage_Main_Info({page_State}) {
             image_ID='Ahsoka_pic'
             />
 
-            {/* <Main_Slide_Rect page_Type={page_State} rect_Type='HomePage_Projects'/> */}
+            <Main_Slide_Rect page_Type={page_State} rect_Type='HomePage_Projects'/>
 
             
         </>
