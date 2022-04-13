@@ -268,14 +268,11 @@ code {
 
 .project_image {
   border-radius: 2em;
+  width: 45em;
 }
 
 .experience_Image {
   width: 30em;
-}
-
-.experience_Image:hover{
-  filter: grayscale(80%);
 }
 
 
@@ -301,6 +298,14 @@ code {
 
 #BYU_pic {
   width: 30em;
+}
+
+#Hololens_pic:hover {
+  filter: grayscale(0%);
+}
+
+#linkedIn_pic:hover {
+  filter: grayscale(80%);
 }
 
 #HomePage_Proj1 {

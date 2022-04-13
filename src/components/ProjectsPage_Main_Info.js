@@ -29,7 +29,7 @@ function ProjectsPage_Main_Info({page_State}) {
             comp_Job_Desc='Developed a Unity application to test human behavior while wearing a Microsoft Hololens device. Unfortunately, I am unable to share the code for the project due to confidentiality purposes with work'
             image_Link='#'
             comp_Image='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4P81F?ver=a732&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF'
-            image_ID='Skimtac_pic'
+            image_ID='Hololens_pic'
             />
           </div>
     )
