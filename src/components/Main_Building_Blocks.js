@@ -28,14 +28,6 @@ function Main_Slide_Rect({page_Type, rect_Type, comp_Text, comp_Image, comp_Job_
             </div>
         )
     }
-
-    
-    
-    // return(
-    //   <div className="Main_Slide_Rect">
-    //     < {page_Type}/>
-    //   </div>
-    // )
 }
 
 export default Main_Slide_Rect

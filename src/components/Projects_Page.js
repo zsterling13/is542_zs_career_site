@@ -24,6 +24,7 @@ function ProjectsPage_Title(slide_Text) {
 }
 
 function Project_Slide({slide_Text, slide_Image, slide_Desc, slide_Tech, image_Link, image_ID}) {
+    // Set a dummy link for the image if there is no provided link
     if(image_Link === undefined)
     {
         image_Link = '#';

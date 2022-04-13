@@ -1,11 +1,8 @@
 import React from "react"
 
 const Header_Nav = ({page_State, on_Page_State_Change}) => {
-    console.log(`current state in nav bar ${page_State}`);
-
     const handle_Change = (new_State) =>
     {
-        //console.log(new_State);
         on_Page_State_Change(new_State);
     }
     
@@ -23,8 +20,6 @@ const Header_Nav = ({page_State, on_Page_State_Change}) => {
 
     else if(page_State == 'ExperiencePage')
     {
-
-        console.log('got to experience nav bar loading');
         return (
             
             <ul className="nav_Bar">

@@ -23,8 +23,6 @@ function ExperiencePage_Main_Info({page_State}) {
             <Main_Slide_Rect page_Type={page_State} rect_Type='LinkedIn_Slide'
             comp_Image='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png'
             />
-
-            
           </div>
     )
 }

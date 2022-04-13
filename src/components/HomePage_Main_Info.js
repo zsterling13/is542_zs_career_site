@@ -23,8 +23,6 @@ function HomePage_Main_Info({page_State}) {
             />
 
             <Main_Slide_Rect page_Type={page_State} rect_Type='HomePage_Projects'/>
-
-            
         </>
     )
 }

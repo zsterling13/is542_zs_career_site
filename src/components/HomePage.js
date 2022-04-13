@@ -2,8 +2,6 @@ import { useState, useRef, useEffect } from "react"
 import * as PIXI from "pixi.js";
 
 const HomePage_Main = ({rect_Type, comp_Text, comp_Image, image_ID}) => {
-
-
     if(rect_Type === 'HomePage_Title')
     {
         return(
@@ -33,8 +31,10 @@ const HomePage_Main = ({rect_Type, comp_Text, comp_Image, image_ID}) => {
 }
 
 function HomePage_Title() {
+    // Create a reference for where to insert the PIXI object in the returned HTML
     const ref = useRef(null);
 
+    // Use an effect to rerender the PIXI object whenever the state is changed to the homepage
     useEffect(() => {
         const app = new PIXI.Application({
             width:window.innerWidth,
@@ -42,9 +42,8 @@ function HomePage_Title() {
             transparent: false,
             antialias: true
         });
-        //app.renderer.view.style.position = 'absolute';
-        
-        //document.getElementsByClassName('homepage_Title').appendChild(app.view);
+
+        // Add the PIXI object to the React reference
         ref.current.appendChild(app.view);
         
         // Get the texture for rope.
@@ -92,6 +91,7 @@ function HomePage_Title() {
             strokeThickness: 4
         })
 
+        // Add Text to the PIXI object
         const my_Name_Text = new PIXI.Text('Zachary Sterling', text_Style);
         my_Name_Text.x = (window.innerWidth/2) - 250;
         my_Name_Text.y = 200;
@@ -103,7 +103,9 @@ function HomePage_Title() {
         my_Skill_Text.y = 300;
 
         app.stage.addChild(my_Skill_Text);
-        
+
+
+        // Add stars to the PIXI object
         function randomizeStar(star, initial) {
             star.z = initial ? Math.random() * 2000 : cameraZ + Math.random() * 1000 + 2000;
         
@@ -146,57 +148,34 @@ function HomePage_Title() {
             }
         });
 
+        // Let the animation begin
         app.start();
     })
     
     return(    
         <div className="homepage_Title">
-            <div ref={ref} />
-            {/* <h1>Zachary Sterling</h1>
-            <h3>Skilled Software Engineer</h3> */}
-            
+            <div ref={ref} />            
         </div>
 
     )
 }
 
 function Left_Background_Slide({slide_Text, slide_Image, image_ID}) {
-    if(slide_Text == undefined && slide_Image == undefined)
-    {
-        return(
-            <h1>Left_Background_Slide no slide text or image</h1>
-        )
-    }
-    else if(slide_Text == undefined && slide_Image != undefined)
-    {
-        return(
-            <h1>Left_Background_Slide with image</h1>
-        )
-    }
-    else if(slide_Text != undefined && slide_Image == undefined)
-    {
-        return(
-            <h1>Left_Background_Slide with slide text but no image</h1>
-        )
-    }
-    else
-    {   
-        return(
-            <div className="left_background_color">
-                <div className="left_Background_Title">
-                    <h1>Background</h1>
+    return(
+        <div className="left_background_color">
+            <div className="left_Background_Title">
+                <h1>Background</h1>
+            </div>
+            <div className="background_content">
+                <div className="left_background_text">
+                    <h1>{slide_Text}</h1>
                 </div>
-                <div className="background_content">
-                    <div className="left_background_text">
-                        <h1>{slide_Text}</h1>
-                    </div>
-                    <div className="left_background_image">
-                        <img className="project_image" id={image_ID} src={slide_Image} alt="ahsoka pic"/>
-                    </div>
+                <div className="left_background_image">
+                    <img className="project_image" id={image_ID} src={slide_Image} alt="ahsoka pic"/>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 function Right_Background_Slide({slide_Text, slide_Image, image_ID}) {

@@ -17,11 +17,16 @@ code {
     monospace;
 }
 
+/* Main Rectangle classes*/
 .Main_Slide_Rect {
   height: 55em;
   display: grid;
 }
 
+
+
+
+/* Nav Bar classes*/
 .nav_Bar {
   list-style-type: none;
   margin: 0em;
@@ -56,6 +61,13 @@ code {
   background-color: #111;
 }
 
+
+
+
+
+
+
+/* Footer classes*/
 .footer {
   display: grid;
 }
@@ -92,6 +104,15 @@ code {
   background-color:#038a59 ;
 }
 
+
+
+
+
+
+
+
+
+/* Titles of pages classes*/
 .experiencepage_Title_Background_Color {
   background-color: #ffffff;
   display: grid;
@@ -119,6 +140,13 @@ code {
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
+
+
+
+
+
+/* Main Slide classes*/
 
 .background_content {
   grid-row-start: 2;
@@ -250,6 +278,15 @@ code {
   filter: grayscale(80%);
 }
 
+
+
+
+
+
+
+
+
+/* Various ID's*/
 #Ahsoka_pic {
   width: 55em;
 }
@@ -283,6 +320,12 @@ code {
   color: white;
   margin-left: -5em;
 }
+
+
+
+
+
+
 
 
 

@@ -21,7 +21,6 @@ const ExperiencePage_Main = ({rect_Type, comp_Text, comp_Image, comp_Job_Title, 
             <LinkedIn_Slide slide_Image={comp_Image} image_ID={image_ID} />
         )
     }
-    
 }
 
 function ExperiencePage_Title(slide_Text) {
