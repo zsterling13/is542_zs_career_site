@@ -1,3 +1,4 @@
+/* Generic CSS*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,17 +8,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
-  padding: 0em;
-  margin: 0em;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-/* Main Rectangle classes*/
+
+
+
+
+
+
+
+/* Main Rectangle component*/
 .Main_Slide_Rect {
   height: 55em;
   display: grid;
@@ -26,7 +29,13 @@ code {
 
 
 
-/* Nav Bar classes*/
+
+
+
+
+
+
+/* Nav Bar component classes*/
 .nav_Bar {
   list-style-type: none;
   margin: 0em;
@@ -60,6 +69,14 @@ code {
 .nav_Bar li a:hover:not(.active) {
   background-color: #111;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -112,25 +129,19 @@ code {
 
 
 
-/* Titles of pages classes*/
-.experiencepage_Title_Background_Color {
-  background-color: #ffffff;
-  display: grid;
-}
 
-.experiencepage_Title_Content{
-  align-self: center;
-  font-size: 3em;
-}
 
+
+
+
+
+
+
+
+
+/* HomePage component classes*/
 .homepage_Title {
   align-self: center;
-  font-size: 3em;
-}
-
-.project_Title {
-  grid-row-start: 1;
-  grid-row-end: 2;
   font-size: 3em;
 }
 
@@ -140,13 +151,6 @@ code {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-
-
-
-
-
-
-/* Main Slide classes*/
 
 .background_content {
   grid-row-start: 2;
@@ -222,6 +226,37 @@ code {
   grid-template-columns: auto auto auto;
 }
 
+.homepage_image {
+  border-radius: 2em;
+  width: 45em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Experience Page component classes*/
+.experiencepage_Title_Background_Color {
+  background-color: #ffffff;
+  display: grid;
+}
+
+.experiencepage_Title_Content{
+  align-self: center;
+  font-size: 3em;
+}
+
 .experience_Background_Color {
   background-color: rgb(197, 197, 197);
   display: grid;
@@ -248,6 +283,30 @@ code {
   font-size: 2em;
 }
 
+.experience_Image {
+  width: 30em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Page component classes*/
+.project_Title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 3em;
+}
 .project_Title h1 {
   margin: 0em;
 }
@@ -271,14 +330,9 @@ code {
   width: 45em;
 }
 
-.homepage_image {
-  border-radius: 2em;
-  width: 45em;
-}
 
-.experience_Image {
-  width: 30em;
-}
+
+
 
 
 
@@ -333,30 +387,4 @@ code {
   background-size: 52em;
   color: white;
   margin-left: -5em;
-}
-
-
-
-
-
-
-
-
-
-/* Scrolling Testing stuff*/
-
-.blue{
-  background-color: blue;
-}
-.red {
-  background-color: red;
-}
-.green {
-  background-color: green;
-}
-.orange {
-  background-color: orange;
-}
-.purple {
-  background-color: purple;
 }
