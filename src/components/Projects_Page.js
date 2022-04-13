@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const ProjectsPage_Main = ({rect_Type, comp_Text, comp_Image, comp_Job_Title, comp_Job_Desc, image_Link, image_ID}) => {
     if(rect_Type === 'ProjectsPage_Title')
     {
@@ -39,7 +37,7 @@ function Project_Slide({slide_Text, slide_Image, slide_Desc, slide_Tech, image_L
                 <div className="background_content">
                     <div className="right_background_image">
                         <a href={image_Link}>
-                            <img id={image_ID} src={slide_Image} alt="ahsoka pic"/>
+                            <img className="project_image" id={image_ID} src={slide_Image} alt="ahsoka pic"/>
                         </a>
                     </div>
                     <div className="project_background_text">
