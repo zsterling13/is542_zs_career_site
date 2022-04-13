@@ -46,6 +46,18 @@ const Header_Nav = ({page_State, on_Page_State_Change}) => {
             </ul>
         )
     }
+
+    else
+    {
+        return (
+            
+            <ul className="nav_Bar">
+                <li><a href="#" onClick={() => handle_Change('HomePage')}>Home</a></li>
+                <li><a href='#' onClick={() => handle_Change('ExperiencePage')}>Experience</a></li>
+                <li className="active"><a href="#">Projects</a></li>
+            </ul>
+        )
+    }
 }
 
 export default Header_Nav

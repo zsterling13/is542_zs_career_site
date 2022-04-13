@@ -1,6 +1,6 @@
 const Footer = function () {
     return(
-        <div className="footer">
+        <div className="footer left_background_color panel">
             <div className="footer_copyright">
                 <p>Zachary Sterling &copy;2022</p>
             </div>

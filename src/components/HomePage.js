@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const HomePage_Main = ({rect_Type, comp_Text, comp_Image, image_ID}) => {
-    console.log(image_ID);
+    
     if(rect_Type === 'HomePage_Title')
     {
         return(
@@ -31,7 +31,7 @@ const HomePage_Main = ({rect_Type, comp_Text, comp_Image, image_ID}) => {
 }
 
 function HomePage_Title() {
-    return(
+    return(    
         <div className="homepage_Title">
             <h1>Zachary Sterling</h1>
             <h3>Skilled Software Engineer</h3>
@@ -76,7 +76,6 @@ function Left_Background_Slide({slide_Text, slide_Image, image_ID}) {
             </div>
         )
     }
-
 }
 
 function Right_Background_Slide({slide_Text, slide_Image, image_ID}) {
@@ -99,7 +98,7 @@ function Right_Background_Slide({slide_Text, slide_Image, image_ID}) {
 
 function HomePage_Projects() {
     return(
-        <>
+        <div className="left_background_color">
             <div className="left_Background_Title">
                 <h1>Current Projects</h1>
             </div>
@@ -114,7 +113,7 @@ function HomePage_Projects() {
                     <h1>Unity AR</h1>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

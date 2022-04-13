@@ -2,7 +2,7 @@ import Main_Slide_Rect from "./Main_Building_Blocks"
 
 function HomePage_Main_Info({page_State}) {
     return(
-        <div>
+        <>
             <Main_Slide_Rect page_Type={page_State} rect_Type='HomePage_Title'/>
             
             <Main_Slide_Rect page_Type={page_State} rect_Type='Left_Background_Slide' comp_Text='Studied Information Systems at BYU'
@@ -22,10 +22,10 @@ function HomePage_Main_Info({page_State}) {
             image_ID='Ahsoka_pic'
             />
 
-            <Main_Slide_Rect page_Type={page_State} rect_Type='HomePage_Projects'/>
+            {/* <Main_Slide_Rect page_Type={page_State} rect_Type='HomePage_Projects'/> */}
 
             
-          </div>
+        </>
     )
 }
 
