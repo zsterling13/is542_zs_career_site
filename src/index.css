@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  padding: 0em;
+  margin: 0em;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -88,7 +93,7 @@ code {
 }
 
 .experiencepage_Title_Background_Color {
-  background-color: #04aa6d;
+  background-color: #ffffff;
   display: grid;
 }
 
@@ -122,8 +127,15 @@ code {
 }
 
 .left_background_color {
-  background-color: dodgerblue;
+  background-color: #333;
   display: grid;
+  color: white;
+}
+
+.right_background_color {
+  background-color: rgb(197, 197, 197);
+  display: grid;
+  color: black;
 }
 
 .left_background_text {
@@ -183,7 +195,7 @@ code {
 }
 
 .experience_Background_Color {
-  background-color: aquamarine;
+  background-color: rgb(197, 197, 197);
   display: grid;
 }
 
@@ -251,7 +263,7 @@ code {
 }
 
 #BYU_pic {
-  width: 40em;
+  width: 30em;
 }
 
 #HomePage_Proj1 {
@@ -260,8 +272,8 @@ code {
 }
 
 #HomePage_Proj2 {
-  background-image: url('https://universe.byu.edu/wp-content/uploads/2021/05/egypt2-1-scaled.jpg');
-  background-size: 60em;
+  background-image: url('https://deseret.brightspotcdn.com/dims4/default/7745a64/2147483647/strip/true/crop/1172x669+14+0/resize/1461x834!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FykrNYzi9Mm81L0RoPNRV88FR_iw%3D%2F0x0%3A1200x669%2F1200x669%2Ffilters%3Afocal%28600x334%3A601x335%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F18572291%2F1654202.jpg');
+  background-size: 65em;
   color: white;
 }
 

@@ -201,7 +201,7 @@ function Left_Background_Slide({slide_Text, slide_Image, image_ID}) {
 
 function Right_Background_Slide({slide_Text, slide_Image, image_ID}) {
     return(
-        <div className="left_background_color">
+        <div className="right_background_color">
             <div className="left_Background_Title">
             <h1>Background</h1>
             </div>
@@ -219,7 +219,7 @@ function Right_Background_Slide({slide_Text, slide_Image, image_ID}) {
 
 function HomePage_Projects() {
     return(
-        <div className="left_background_color">
+        <div className="right_background_color">
             <div className="left_Background_Title">
                 <h1>Current Projects</h1>
             </div>

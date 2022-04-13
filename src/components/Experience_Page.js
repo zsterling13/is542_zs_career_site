@@ -56,7 +56,7 @@ function Experience_Slide({slide_Text, slide_Image, comp_Job_Title, comp_Job_Des
 function LinkedIn_Slide({slide_Image, image_ID}) {
     
     return(
-        <div className="left_background_color">
+        <div className="experience_Background_Color">
             <div className="linkedIn_Text">
                 <h1>LinkedIn Profile</h1>
             </div>
