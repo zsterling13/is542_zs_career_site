@@ -271,6 +271,11 @@ code {
   width: 45em;
 }
 
+.homepage_image {
+  border-radius: 2em;
+  width: 45em;
+}
+
 .experience_Image {
   width: 30em;
 }
@@ -300,6 +305,10 @@ code {
   width: 30em;
 }
 
+#BYU_pic:hover {
+  filter: grayscale(0%);
+}
+
 #Hololens_pic:hover {
   filter: grayscale(0%);
 }
@@ -314,7 +323,7 @@ code {
 }
 
 #HomePage_Proj2 {
-  background-image: url('https://deseret.brightspotcdn.com/dims4/default/7745a64/2147483647/strip/true/crop/1172x669+14+0/resize/1461x834!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FykrNYzi9Mm81L0RoPNRV88FR_iw%3D%2F0x0%3A1200x669%2F1200x669%2Ffilters%3Afocal%28600x334%3A601x335%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F18572291%2F1654202.jpg');
+  background-image: url('../public/img/byu_egypt.jfif');
   background-size: 65em;
   color: white;
 }

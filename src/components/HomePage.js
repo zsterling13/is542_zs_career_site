@@ -171,7 +171,7 @@ function Left_Background_Slide({slide_Text, slide_Image, image_ID}) {
                     <h1>{slide_Text}</h1>
                 </div>
                 <div className="left_background_image">
-                    <img className="project_image" id={image_ID} src={slide_Image} alt="ahsoka pic"/>
+                    <img className="homepage_image" id={image_ID} src={slide_Image} alt="ahsoka pic"/>
                 </div>
             </div>
         </div>
